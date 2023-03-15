@@ -1,0 +1,40 @@
+.quiz {
+  height: 100vh;
+
+  .category {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #000;
+    width: max-content;
+  }
+
+  .question {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+    border-radius: 20px;
+  }
+
+  .choices {
+    display: flex;
+    flex-direction: column;
+
+    .btn-choices {
+      margin-bottom: 1.5rem;
+      text-align: left;
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      border: 0;
+      box-shadow: 5px 5px 10px rgb(0 0 0 / 30%);
+
+      &:hover {
+        background: #dedede;
+      }
+
+      &:focus {
+        background: #ffc107;
+      }
+    }
+  }
+}

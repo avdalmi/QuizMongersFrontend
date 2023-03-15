@@ -1,0 +1,58 @@
+@import "~bootstrap/scss/bootstrap";
+
+//fonts
+@font-face {
+  font-family: "Heming";
+  src: local("Heming"), url(./fonts/Heming.ttf) format("truetype");
+}
+
+//main
+body {
+  background-color: #f8f9fa;
+  font-family: "Heming";
+}
+
+a {
+  text-decoration: none;
+}
+
+.container-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem;
+}
+
+.bg-patterns {
+  background-image: url(./assets/patterns.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f8f9fa;
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  button {
+    border: 0;
+    background: 0;
+    padding: 0;
+    margin: 0;
+    border: 4px solid #fff;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 10%);
+
+    &:focus {
+      border: 4px solid #ffc107;
+      border-radius: 50px;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    border-radius: 20px;
+  }
+}
